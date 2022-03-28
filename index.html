@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1,
+  maximum-scale=5"
+    />
+
+    <link rel="icon" href="devchallenges.png" />
+
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <link rel="stylesheet" href="./style.css" />
+
+    <title>checkout Page</title>
+  </head>
+  <body>
+    <div class="checkout">
+      <h1 class="checkout-title">Checkout</h1>
+
+      <div class="checkout-content">
+        <form class="checkout-form">
+          <div class="form-contact">
+            <h2>Contact information</h2>
+
+            <div class="form-group">
+              <label for="email" class="form-label">E-mail</label>
+              <div class="form-input">
+                <i class="fa-solid fa-envelope"></i>
+                <input
+                  type="email"
+                  placeholder="Enter your email..."
+                  id="email"
+                  required
+                />
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="phone" class="form-label">Phone</label>
+              <div class="form-input">
+                <i class="fa-solid fa-phone"></i>
+                <input
+                  type="tel"
+                  placeholder="Enter your phone..."
+                  id="phone"
+                  required
+                />
+              </div>
+            </div>
+          </div>
+
+          <div class="form-ship-add">
+            <h2>Shipping address</h2>
+
+            <div class="form-group">
+              <label for="name" class="form-label">Full name</label>
+              <div class="form-input">
+                <i class="fa-solid fa-circle-user"></i>
+                <input
+                  type="text"
+                  placeholder="Your name..."
+                  id="name"
+                  value="Rodney Smith"
+                  required
+                />
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="address" class="form-label">Address</label>
+              <div class="form-input">
+                <i class="fa-solid fa-house-chimney"></i>
+                <input
+                  type="text"
+                  placeholder="Your address..."
+                  id="address"
+                  required
+                />
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="city" class="form-label">City</label>
+              <div class="form-input">
+                <i class="fa-solid fa-city"></i>
+                <input
+                  type="text"
+                  placeholder="Your city..."
+                  id="city"
+                  required
+                />
+              </div>
+            </div>
+
+            <div class="form-group dropdown">
+              <label for="country" class="form-label">Country</label>
+              <div class="form-input dropdown-select">
+                <i class="fa-solid fa-earth-asia"></i>
+                <input
+                  type="text"
+                  placeholder="Your country..."
+                  id="country"
+                  required
+                />
+                <i class="fa-solid fa-chevron-down"></i>
+              </div>
+
+              <ul class="dropdown-list">
+                <li class="dropdown-item">England</li>
+                <li class="dropdown-item">Germany</li>
+                <li class="dropdown-item">Poland</li>
+              </ul>
+            </div>
+
+            <div class="form-group">
+              <label for="postal" class="form-label">Postal code</label>
+              <div class="form-input">
+                <i class="fa-solid fa-envelopes-bulk"></i>
+                <input
+                  type="text"
+                  placeholder="Your postal code..."
+                  id="postal"
+                  required
+                />
+              </div>
+            </div>
+
+            <div class="form-group">
+              <div class="form-input checkbox">
+                <input type="checkbox" id="save-info" />
+              </div>
+              <label for="save-info" class="form-label"
+                >Save this information for next time</label
+              >
+            </div>
+          </div>
+
+          <button type="submit" class="form-submit">Continue</button>
+        </form>
+
+        <div class="checkout-cart">
+          <div class="cart-item">
+            <img src="./img/photo1.png" alt="" />
+            <div class="cart-item-content">
+              <h3>Vintage Backbag</h3>
+              <div class="cart-price">
+                <p class="cart-price-now">$54.99</p>
+                <span class="cart-price-past">$94.99</span>
+              </div>
+              <div class="cart-item-qnt">
+                <i class="minus fas fa-minus"></i>
+                <span>0</span>
+                <i class="plus fas fa-plus"></i>
+              </div>
+            </div>
+          </div>
+
+          <div class="cart-item">
+            <img src="./img/photo2.png" alt="" />
+            <div class="cart-item-content">
+              <h3>Levi Shoes</h3>
+              <div class="cart-price">
+                <p class="cart-price-now">$74.99</p>
+                <span class="cart-price-past">$124.99</span>
+              </div>
+              <div class="cart-item-qnt">
+                <i class="minus fas fa-minus"></i>
+                <span>0</span>
+                <i class="plus fas fa-plus"></i>
+              </div>
+            </div>
+          </div>
+
+          <div class="cart-shipping">
+            <span class="cart-shipping-title">Shipping</span>
+            <span class="cart-shipping-cost">$19.00</span>
+          </div>
+
+          <div class="cart-total">
+            <span class="cart-total-title">Total</span>
+            <span class="cart-total-cost">$0</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <small
+      >created by
+      <a href="https://github.com/phvntin" target="blank">phvntin</a> -
+      devChallenges.io
+    </small>
+
+    <script src="./app.js"></script>
+  </body>
+</html>
