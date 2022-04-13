@@ -272,11 +272,6 @@ img {
   cursor: pointer;
   transition: all 0.2s;
 }
-.cart-item-qnt > i .disabled {
-  pointer-events: none;
-  cursor: help;
-  opacity: 0.2;
-}
 .cart-item-qnt > i:hover {
   color: #333;
 }

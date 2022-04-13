@@ -300,12 +300,6 @@ img {
         cursor: pointer;
         transition: all 0.2s;
 
-        .disabled {
-          pointer-events: none;
-          cursor: help;
-          opacity: 0.2;
-        }
-
         &:hover {
           color: $gray-1;
         }
